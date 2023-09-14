@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    overflow: hidden;
+}
+
+#mainScreen {
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: 2px solid #444;
+    text-align: right;
+    padding: 10px;
+    font-size: 36px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    color: #fff;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.operator,
+#equal,
+#allClear {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+#dot,
+#github {
+    background-color: #555;
+    color: #fff;
+}
+
+#github {
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 24px;
+    padding: 20px;
+}
+
+#github img {
+    width: 36px;
+    height: auto;
+}
